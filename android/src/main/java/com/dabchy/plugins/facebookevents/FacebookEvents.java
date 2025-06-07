@@ -2,6 +2,7 @@ package com.dabchy.plugins.facebookevents;
 
 import android.os.Bundle;
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.FacebookSdk;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import java.util.Iterator;
@@ -31,5 +32,9 @@ public class FacebookEvents {
             // Log the event without parameters if params is null or empty
             logger.logEvent(event);
         }
+    }
+
+    public void setAdvertiserTrackingEnabled(enabled){
+        FacebookSdk.setAdvertiserTrackingEnabled(enabled);
     }
 }
