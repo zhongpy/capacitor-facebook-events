@@ -35,6 +35,6 @@ public class FacebookEvents {
     }
 
     public void setAdvertiserTrackingEnabled(Boolean enabled){
-        FacebookSdk.setAdvertiserTrackingEnabled(enabled);
+        FacebookSdk.setAutoLogAppEventsEnabled(enabled);
     }
 }
