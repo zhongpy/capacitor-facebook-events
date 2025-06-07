@@ -34,7 +34,7 @@ public class FacebookEvents {
         }
     }
 
-    public void setAdvertiserTrackingEnabled(enabled){
+    public void setAdvertiserTrackingEnabled(Boolean enabled){
         FacebookSdk.setAdvertiserTrackingEnabled(enabled);
     }
 }
