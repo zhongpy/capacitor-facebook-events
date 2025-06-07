@@ -18,10 +18,6 @@ public class FacebookEventsPlugin extends Plugin {
 
     @PluginMethod
     public void setAdvertiserTrackingEnabled(PluginCall call) {
-        if (!call.hasOption("enabled")) {
-            call.reject("Missing enabled argument");
-            return;
-        }
         Boolean enabled = call.getBoolean("enabled", true);
         facebookEvents.setAdvertiserTrackingEnabled(enabled);
         call.resolve();
