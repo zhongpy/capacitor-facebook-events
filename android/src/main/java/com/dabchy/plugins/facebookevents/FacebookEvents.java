@@ -9,9 +9,9 @@ import java.util.Iterator;
 
 public class FacebookEvents {
 
-    private final AppEventsLogger logger;
+    private AppEventsLogger logger;
 
-    public FacebookEvents(Plugin plugin) {
+    public void initEvents(Plugin plugin) {
         logger = AppEventsLogger.newLogger(plugin.getContext());
     }
 

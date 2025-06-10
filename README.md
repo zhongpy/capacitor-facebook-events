@@ -13,6 +13,7 @@ npx cap sync
 
 <docgen-index>
 
+* [`initEvent()`](#initevent)
 * [`setAdvertiserTrackingEnabled(...)`](#setadvertisertrackingenabled)
 * [`logEvent(...)`](#logevent)
 
@@ -20,6 +21,15 @@ npx cap sync
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### initEvent()
+
+```typescript
+initEvent() => Promise<void>
+```
+
+--------------------
+
 
 ### setAdvertiserTrackingEnabled(...)
 

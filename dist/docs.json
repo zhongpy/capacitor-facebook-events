@@ -6,6 +6,16 @@
     "tags": [],
     "methods": [
       {
+        "name": "initEvent",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "initevent"
+      },
+      {
         "name": "setAdvertiserTrackingEnabled",
         "signature": "(options: { enabled: boolean; }) => Promise<void>",
         "parameters": [

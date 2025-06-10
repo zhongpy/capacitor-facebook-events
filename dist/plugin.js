@@ -8,7 +8,6 @@ var capacitorFacebookEvents = (function (exports, core) {
     class FacebookEventsWeb extends core.WebPlugin {
         constructor() {
             super();
-            this.loadFBSDK();
         }
         loadFBSDK() {
             ((d, s, id) => {
@@ -22,6 +21,9 @@ var capacitorFacebookEvents = (function (exports, core) {
                 js.src = 'https://connect.facebook.net/en_US/sdk.js';
                 (_a = fjs.parentNode) === null || _a === void 0 ? void 0 : _a.insertBefore(js, fjs);
             })(document, 'script', 'facebook-jssdk');
+        }
+        async initEvent() {
+            this.loadFBSDK();
         }
         async setAdvertiserTrackingEnabled({ enabled }) {
             console.warn(`setAdvertiserTrackingEnabled called with enabled: ${enabled}. Note: This is not applicable on the web platform.`);

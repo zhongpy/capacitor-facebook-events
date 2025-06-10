@@ -7,7 +7,6 @@ declare let FB: any;
 export class FacebookEventsWeb extends WebPlugin implements FacebookEventsPlugin {
   constructor() {
     super();
-    this.loadFBSDK();
   }
 
   loadFBSDK(): void {
@@ -21,6 +20,10 @@ export class FacebookEventsWeb extends WebPlugin implements FacebookEventsPlugin
       js.src = 'https://connect.facebook.net/en_US/sdk.js';
       fjs.parentNode?.insertBefore(js, fjs);
     })(document, 'script', 'facebook-jssdk');
+  }
+
+  async initEvent(): Promise<void> {
+    this.loadFBSDK();
   }
 
   async setAdvertiserTrackingEnabled({ enabled }: { enabled: boolean }): Promise<void> {

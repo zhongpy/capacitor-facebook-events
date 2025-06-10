@@ -13,7 +13,13 @@ public class FacebookEventsPlugin extends Plugin {
 
     @Override
     public void load() {
-        facebookEvents = new FacebookEvents(this);
+        facebookEvents = new FacebookEvents();
+    }
+
+    @PluginMethod
+    public void initEvent(PluginCall call){
+        facebookEvents.initEvents(this);
+        call.resolve();
     }
 
     @PluginMethod

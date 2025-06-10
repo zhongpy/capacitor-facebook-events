@@ -3,6 +3,7 @@ import type { FacebookEventsPlugin } from './definitions';
 export declare class FacebookEventsWeb extends WebPlugin implements FacebookEventsPlugin {
     constructor();
     loadFBSDK(): void;
+    initEvent(): Promise<void>;
     setAdvertiserTrackingEnabled({ enabled }: {
         enabled: boolean;
     }): Promise<void>;
