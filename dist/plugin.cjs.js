@@ -29,6 +29,9 @@ class FacebookEventsWeb extends core.WebPlugin {
     async setAdvertiserTrackingEnabled({ enabled }) {
         console.warn(`setAdvertiserTrackingEnabled called with enabled: ${enabled}. Note: This is not applicable on the web platform.`);
     }
+    async setAdvertiserIDCollectionEnable({ enabled }) {
+        console.warn(`setAdvertiserIDCollectionEnable called with enabled: ${enabled}. Note: This is not applicable on the web platform.`);
+    }
     async logEvent(options) {
         if (typeof FB !== 'undefined') {
             FB.AppEvents.logEvent(options.event, options.params);

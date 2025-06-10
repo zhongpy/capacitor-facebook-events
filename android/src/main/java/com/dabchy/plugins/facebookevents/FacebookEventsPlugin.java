@@ -30,6 +30,13 @@ public class FacebookEventsPlugin extends Plugin {
     }
 
     @PluginMethod
+    public void setAdvertiserIDCollectionEnable(PluginCall call){
+        Boolean enabled = call.getBoolean("enabled", true);
+        facebookEvents.setAdvertiserIDCollectionEnable(enabled);
+        call.resolve();
+    }
+
+    @PluginMethod
     public void logEvent(PluginCall call) {
         String event = call.getString("event");
         JSObject params = call.getObject("params", new JSObject());

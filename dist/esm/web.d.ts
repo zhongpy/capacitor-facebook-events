@@ -7,6 +7,9 @@ export declare class FacebookEventsWeb extends WebPlugin implements FacebookEven
     setAdvertiserTrackingEnabled({ enabled }: {
         enabled: boolean;
     }): Promise<void>;
+    setAdvertiserIDCollectionEnable({ enabled }: {
+        enabled: boolean;
+    }): Promise<void>;
     logEvent(options: {
         event: string;
         params?: any;

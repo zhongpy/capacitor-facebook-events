@@ -32,6 +32,22 @@
         "slug": "setadvertisertrackingenabled"
       },
       {
+        "name": "setAdvertiserIDCollectionEnable",
+        "signature": "(options: { enabled: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ enabled: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "setadvertiseridcollectionenable"
+      },
+      {
         "name": "logEvent",
         "signature": "(options: { event: string; params?: any; }) => Promise<void>",
         "parameters": [

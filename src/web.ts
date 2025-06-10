@@ -32,6 +32,12 @@ export class FacebookEventsWeb extends WebPlugin implements FacebookEventsPlugin
     );
   }
 
+  async setAdvertiserIDCollectionEnable({ enabled }: { enabled: boolean }): Promise<void> {
+    console.warn(
+      `setAdvertiserIDCollectionEnable called with enabled: ${enabled}. Note: This is not applicable on the web platform.`,
+    );
+  }
+
   async logEvent(options: { event: string; params?: any }): Promise<void> {
     if (typeof FB !== 'undefined') {
       FB.AppEvents.logEvent(options.event, options.params);

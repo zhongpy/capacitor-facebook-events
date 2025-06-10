@@ -15,6 +15,7 @@ npx cap sync
 
 * [`initEvent()`](#initevent)
 * [`setAdvertiserTrackingEnabled(...)`](#setadvertisertrackingenabled)
+* [`setAdvertiserIDCollectionEnable(...)`](#setadvertiseridcollectionenable)
 * [`logEvent(...)`](#logevent)
 
 </docgen-index>
@@ -35,6 +36,19 @@ initEvent() => Promise<void>
 
 ```typescript
 setAdvertiserTrackingEnabled(options: { enabled: boolean; }) => Promise<void>
+```
+
+| Param         | Type                               |
+| ------------- | ---------------------------------- |
+| **`options`** | <code>{ enabled: boolean; }</code> |
+
+--------------------
+
+
+### setAdvertiserIDCollectionEnable(...)
+
+```typescript
+setAdvertiserIDCollectionEnable(options: { enabled: boolean; }) => Promise<void>
 ```
 
 | Param         | Type                               |
