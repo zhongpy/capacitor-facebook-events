@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.js","sourceRoot":"","sources":["../../src/definitions.ts"],"names":[],"mappings":"","sourcesContent":["export interface FacebookEventsPlugin {\r\n  setAdvertiserTrackingEnabled(options: { enabled: boolean }): Promise<void>;\r\n  logEvent(options: { event: string; params?: any }): Promise<void>;\r\n}\r\n"]}
