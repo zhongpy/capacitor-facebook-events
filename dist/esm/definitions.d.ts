@@ -1,5 +1,8 @@
 export interface FacebookEventsPlugin {
     initEvent(): Promise<void>;
+    setAutoInitEnabled(options: {
+        enabled: boolean;
+    }): Promise<void>;
     setAdvertiserTrackingEnabled(options: {
         enabled: boolean;
     }): Promise<void>;

@@ -4,6 +4,9 @@ export declare class FacebookEventsWeb extends WebPlugin implements FacebookEven
     constructor();
     loadFBSDK(): void;
     initEvent(): Promise<void>;
+    setAutoInitEnabled({ enabled }: {
+        enabled: boolean;
+    }): Promise<void>;
     setAdvertiserTrackingEnabled({ enabled }: {
         enabled: boolean;
     }): Promise<void>;

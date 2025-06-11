@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`initEvent()`](#initevent)
+* [`setAutoInitEnabled(...)`](#setautoinitenabled)
 * [`setAdvertiserTrackingEnabled(...)`](#setadvertisertrackingenabled)
 * [`setAdvertiserIDCollectionEnable(...)`](#setadvertiseridcollectionenable)
 * [`logEvent(...)`](#logevent)
@@ -28,6 +29,19 @@ npx cap sync
 ```typescript
 initEvent() => Promise<void>
 ```
+
+--------------------
+
+
+### setAutoInitEnabled(...)
+
+```typescript
+setAutoInitEnabled(options: { enabled: boolean; }) => Promise<void>
+```
+
+| Param         | Type                               |
+| ------------- | ---------------------------------- |
+| **`options`** | <code>{ enabled: boolean; }</code> |
 
 --------------------
 

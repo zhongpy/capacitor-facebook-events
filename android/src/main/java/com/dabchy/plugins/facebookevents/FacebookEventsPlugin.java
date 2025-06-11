@@ -21,7 +21,12 @@ public class FacebookEventsPlugin extends Plugin {
         facebookEvents.initEvents(this);
         call.resolve();
     }
-
+    @PluginMethod
+    public void setAutoInitEnabled(PluginCall call) {
+        Boolean enabled = call.getBoolean("enabled", true);
+        facebookEvents.setAutoInitEnabled(enabled);
+        call.resolve();
+    }
     @PluginMethod
     public void setAdvertiserTrackingEnabled(PluginCall call) {
         Boolean enabled = call.getBoolean("enabled", true);

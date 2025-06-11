@@ -16,6 +16,22 @@
         "slug": "initevent"
       },
       {
+        "name": "setAutoInitEnabled",
+        "signature": "(options: { enabled: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ enabled: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "setautoinitenabled"
+      },
+      {
         "name": "setAdvertiserTrackingEnabled",
         "signature": "(options: { enabled: boolean; }) => Promise<void>",
         "parameters": [

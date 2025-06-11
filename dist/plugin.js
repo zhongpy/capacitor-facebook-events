@@ -25,6 +25,9 @@ var capacitorFacebookEvents = (function (exports, core) {
         async initEvent() {
             this.loadFBSDK();
         }
+        async setAutoInitEnabled({ enabled }) {
+            console.warn(`setAutoInitEnabled called with enabled: ${enabled}. Note: This is not applicable on the web platform.`);
+        }
         async setAdvertiserTrackingEnabled({ enabled }) {
             console.warn(`setAdvertiserTrackingEnabled called with enabled: ${enabled}. Note: This is not applicable on the web platform.`);
         }

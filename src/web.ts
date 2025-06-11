@@ -26,6 +26,12 @@ export class FacebookEventsWeb extends WebPlugin implements FacebookEventsPlugin
     this.loadFBSDK();
   }
 
+  async setAutoInitEnabled({ enabled }: { enabled: boolean }): Promise<void> {
+    console.warn(
+      `setAutoInitEnabled called with enabled: ${enabled}. Note: This is not applicable on the web platform.`,
+    );
+  }
+
   async setAdvertiserTrackingEnabled({ enabled }: { enabled: boolean }): Promise<void> {
     console.warn(
       `setAdvertiserTrackingEnabled called with enabled: ${enabled}. Note: This is not applicable on the web platform.`,

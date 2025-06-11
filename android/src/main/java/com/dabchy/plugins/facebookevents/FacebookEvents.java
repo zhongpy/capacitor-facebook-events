@@ -35,6 +35,13 @@ public class FacebookEvents {
         }
     }
 
+    public void setAutoInitEnabled(Boolean enabled){
+        FacebookSdk.setAutoInitEnabled(enabled);
+        if(enabled){
+            FacebookSdk.fullyInitialize();
+        }
+    }
+
     public void setAdvertiserTrackingEnabled(Boolean enabled){
         FacebookSdk.setAutoLogAppEventsEnabled(enabled);
     }
