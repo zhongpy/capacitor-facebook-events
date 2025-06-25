@@ -12,6 +12,7 @@ public class FacebookEvents {
     private AppEventsLogger logger;
 
     public void initEvents(Plugin plugin) {
+        FacebookSdk.fullyInitialize();
         FacebookSdk.sdkInitialize(plugin.getContext());
         logger = AppEventsLogger.newLogger(plugin.getContext());
     }
@@ -37,9 +38,6 @@ public class FacebookEvents {
 
     public void setAutoInitEnabled(Boolean enabled){
         FacebookSdk.setAutoInitEnabled(enabled);
-        if(enabled){
-            FacebookSdk.fullyInitialize();
-        }
     }
 
     public void setAdvertiserTrackingEnabled(Boolean enabled){
